@@ -5,5 +5,9 @@
   "main": "index.js",
   "author": "jayCde",
   "license": "MIT License",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "mongodb": "2.2.16"
+  }
 }
