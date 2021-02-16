@@ -1,4 +1,15 @@
 {
+    "Admin":[
+        {
+            "id": "101",
+            "firstname": "admin",
+            "lastname": "admin",
+            "username": "admin",
+            "password": "admin",
+            "age": "101"
+        }
+    ],
+
     "Students": [
         {
 
