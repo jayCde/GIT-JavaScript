@@ -1,0 +1,9 @@
+{
+  "name": "hunger-free",
+  "version": "1.0.0",
+  "description": "Backend api",
+  "main": "index.js",
+  "author": "jayCde",
+  "license": "MIT License",
+  "private": false
+}
