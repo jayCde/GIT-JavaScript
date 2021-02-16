@@ -5,7 +5,7 @@ Eventually Node's Express JS would be used for the backend api.
 
 
 # Backend Application
-The backend  is built JSON server for quick back-end for prototyping and mocking.
+The backend is built using JSON server for quick back-end prototyping and mocking.
 
 
 - Official website(s) and more:
