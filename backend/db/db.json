@@ -1,0 +1,25 @@
+{
+    "Students": [
+        {
+
+            "id": "",
+            "firstname": "",
+            "lastname": "",
+            "username": "",
+            "password": "",
+            "age": ""
+        
+        }
+
+    ],
+
+    "Food":[
+        {
+            "Monday":[],
+            "Tuesday":[],
+            "Wednesday":[],
+            "Thursday":[],
+            "Friday":[]
+        }
+    ]
+}
