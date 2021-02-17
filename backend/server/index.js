@@ -6,7 +6,7 @@ const http = require('http');
 const server = http.createServer(function (req, res) {
     res.statusCode = 200; // 200 = OK
     res.setHeader('Content-Type', 'text/html');
-    res.write("<h1>Hunger free</h1>");
+    res.write("<h1>Welcome to The Healthy, Hunger-Free kids.</h1>");
     res.end();
 });
 
