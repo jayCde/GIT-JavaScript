@@ -4,7 +4,7 @@ import Link from 'next/Link';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 // import { Redirect } from "react-router-dom";
-import styles from '../styles/landing.module.css';
+import styles from '../styles/signup.module.css';
 import { API_BASE_URL, API_PORT} from '../../config';
 import isAlpha from 'validator/lib/isAlpha';
 import isAlphanumeric from 'validator/lib/isAlphanumeric';
@@ -86,7 +86,7 @@ export default function Signup(){
                                 className={styles.InputField}
                                 placeholder="Firstname"
                                 name="firstname"
-                                id="lastname"
+                                id="firstname"
                                 ref={register({required: true, minLength: 3,
                                     validate: (input) => isAlpha (input)
                                 })}
