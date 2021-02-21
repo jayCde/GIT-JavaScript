@@ -1,4 +1,4 @@
-// import axios from 'axios';
+import axios from 'axios';
 import Head from 'next/head'
 // import Link from 'next/Link'
 // import React, { useState } from 'react';
