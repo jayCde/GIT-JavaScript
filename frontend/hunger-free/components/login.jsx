@@ -4,7 +4,7 @@ import Link from 'next/Link';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 // import { Redirect } from "react-router-dom";
-import styles from '../styles/landing.module.css';
+import styles from '../styles/login.module.css';
 import { API_BASE_URL, API_PORT} from '../../config';
 import isAlphanumeric from 'validator/lib/isAlphanumeric';
 
@@ -36,7 +36,7 @@ export default function Login(){
 
             //If user credentials are correct and login successful
             if (resp.status == 200){
-                window.location="../pages/studentsdashboard";
+                window.location="studentsdashboard";
                 alert("Login Successful")
                 console.log(resp.data)
                 localStorage.setItem('student', JSON.stringify(resp.data))
