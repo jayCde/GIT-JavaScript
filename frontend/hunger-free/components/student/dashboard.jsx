@@ -10,6 +10,7 @@ import styles from '../../styles/student.module.css';
 export default function StudentDashboard(){
 
 //Student state object
+const [id, setstudentID] = useState("");
 const [firstname, setstudentFirstname] = useState("");
 const [lastname, setstudentLastname] = useState("");
 const [username, setstudentUsername] = useState("");
@@ -20,6 +21,8 @@ const [username, setstudentUsername] = useState("");
 
         if (studentdata){
             const foundstudent = JSON.parse(studentdata);
+
+            setstudentID(foundstudent.id)
             setstudentFirstname(foundstudent.firstname);
             setstudentLastname(foundstudent.lastname);
             setstudentUsername(foundstudent.username);
@@ -41,6 +44,9 @@ const [username, setstudentUsername] = useState("");
             </Head>
         
             <main className={styles.main}>
+                <div className={styles.welcome}>
+                    Welcome, {firstname} .
+                </div>
                 <div>
                     <Link href="login"><button>Logout</button></Link>
                 </div>
