@@ -1,36 +1,70 @@
 {
-    "Admin":[
-        {
-            "id": "101",
-            "firstname": "admin",
-            "lastname": "admin",
-            "username": "admin",
-            "password": "admin",
-            "age": "101"
-        }
-    ],
-
-    "Students": [
-        {
-
-            "id": "",
-            "firstname": "",
-            "lastname": "",
-            "username": "",
-            "password": "",
-            "age": ""
-        
-        }
-
-    ],
-
-    "Food":[
-        {
-            "Monday":[],
-            "Tuesday":[],
-            "Wednesday":[],
-            "Thursday":[],
-            "Friday":[]
-        }
-    ]
+  "admin": [
+    {
+      "id": "101",
+      "firstname": "admin",
+      "lastname": "admin",
+      "username": "admin",
+      "password": "admin",
+      "age": "101"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "firstname": "test",
+      "lastname": "user",
+      "username": "thisusertest1",
+      "password": "thisusertest",
+      "age": "12"
+    },
+    {
+      "firstname": "Mike",
+      "lastname": "Doe",
+      "username": "mikey1234",
+      "age": "12",
+      "password": "mickeydoe123",
+      "id": "OehyQ6r"
+    },
+    {
+      "firstname": "John",
+      "lastname": "Doe",
+      "username": "johndoe123",
+      "age": "9",
+      "password": "johny2345",
+      "id": "C1wu-35"
+    },
+    {
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "username": "janedoe9743",
+      "age": "17",
+      "password": "janed12345",
+      "id": "Fo8AhF7"
+    },
+    {
+      "firstname": "Harley",
+      "lastname": "Quinn",
+      "username": "harlquinn234",
+      "age": "12",
+      "password": "harlquinn1256",
+      "id": "tUtSGY7"
+    }
+  ],
+  "food": [
+    {
+      "Monday": [],
+      "Tuesday": [],
+      "Wednesday": [],
+      "Thursday": [],
+      "Friday": []
+    }
+  ],
+  "orders": [
+    {
+      "username": "",
+      "meal": "",
+      "day": ""
+    }
+  ]
 }
