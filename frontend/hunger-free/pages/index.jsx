@@ -21,8 +21,8 @@ export default function Home(){
                 </p>
 
                 <div className={styles.buttons}>
-                    <Link href="/"><button>Login</button></Link>
-                    <Link href="/"><button>Sign Up</button></Link>
+                    <Link href="login"><button>Login</button></Link>
+                    <Link href="signup"><button>Sign Up</button></Link>
                 </div>
             </main>
 
