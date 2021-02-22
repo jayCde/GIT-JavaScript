@@ -2,10 +2,10 @@
   "admin": [
     {
       "id": "101",
-      "firstname": "admin",
-      "lastname": "admin",
-      "username": "admin",
-      "password": "admin",
+      "firstname": "Admin",
+      "lastname": "Admin",
+      "username": "admin123497",
+      "password": "adminpass0234",
       "age": "101"
     }
   ],
@@ -51,15 +51,19 @@
       "id": "tUtSGY7"
     }
   ],
+
   "food": [
     {
-      "Monday": [],
-      "Tuesday": [],
-      "Wednesday": [],
-      "Thursday": [],
-      "Friday": []
+      "meal": [
+        "Banku with Shito and Tilapia",
+        "Rice with Kontomire Stew and Fish",
+        "French fries with Shito and Chicken",
+        "Rice with Stew and Fried Egg",
+        "Noodles with Sausages, eggs and chicken slices"
+      ]
     }
   ],
+
   "orders": [
     {
       "username": "",
