@@ -12,7 +12,7 @@ import isAlphanumeric from 'validator/lib/isAlphanumeric';
 
 export default function Login(){
 
-    //react hooks
+    //Using react hooks
 
     const { 
         register, errors, watch,
@@ -106,6 +106,7 @@ export default function Login(){
                     <br></br>
 
                     <Link href="signup"><button>Don't Have an Account? Sign Up Here</button></Link>
+                    <Link href="admin"><button>Admin Login</button></Link>
                 </div>
             </main>
 
