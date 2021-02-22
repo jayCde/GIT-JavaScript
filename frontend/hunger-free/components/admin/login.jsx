@@ -36,7 +36,7 @@ export default function Login(){
 
             //If user credentials are correct and login successful
             if (resp.status == 200){
-                window.location="studentsdashboard";
+                window.location="admindashboard";
                 alert("Login Successful")
                 console.log(resp.data)
                 localStorage.setItem('student', JSON.stringify(resp.data))
