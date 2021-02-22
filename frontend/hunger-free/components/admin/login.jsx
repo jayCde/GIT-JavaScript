@@ -4,8 +4,8 @@ import Link from 'next/Link';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 // import { Redirect } from "react-router-dom";
-import styles from '../styles/login.module.css';
-import { API_BASE_URL, API_PORT} from '../../config';
+import styles from '../../styles/login.module.css';
+import { API_BASE_URL, API_PORT} from '../../../config';
 import isAlphanumeric from 'validator/lib/isAlphanumeric';
 
 
