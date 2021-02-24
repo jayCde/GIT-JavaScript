@@ -16,6 +16,76 @@
     align-items: center;
   }
 
+  .card {   
+    padding: 0.5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .split{
+    height: 70%;
+    width: 35%;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .users {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+    position: absolute;
+    transform: translate(0%, 0%);
+    text-align: center;
+    background-color: crimson;
+    border-color: crimson;
+    border-radius: 50px;
+  }
+
+  .orders {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* left: 35; */
+    position: absolute;
+    transform: translate(0%, 0%);
+    text-align: center;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    border-radius: 20px;
+  }
+
+  .meals {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+
+    position: absolute;
+    transform: translate(0%, 0%);
+    text-align: center;
+    background-color: chocolate;
+    border-color: chocolate;
+    border-radius: 50px;
+  }
+
   .footer {
     width: 100%;
     height: 100px;
