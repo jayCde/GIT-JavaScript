@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/Link';
 
-export default function dashboard(){
+export default function Admindashboard() {
     return(
         <div>
             <Head>
@@ -24,6 +24,10 @@ export default function dashboard(){
 
                 <div>
                     Orders for the day
+                </div>
+
+                <div>
+                    <Link href="/"><button>Logout</button></Link>
                 </div>
             </main>
 
