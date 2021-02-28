@@ -66,11 +66,14 @@ export default function Login(){
             </Head>
         
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Kindly enter your credentials to Login.
-                </h1>
+            <img src="/Picture1.png" alt="logo" style={{position:"absolute", top:"5%", width:"50px", height:"50px"}}/>
 
                 <div className={styles.card}>
+
+                <h3>
+                    Kindly enter your credentials below to Login
+                </h3>
+
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                         <input  type="text" 
@@ -82,7 +85,9 @@ export default function Login(){
                                     validate: (input) => isAlphanumeric (input)
                                 })}
                         />
+                        <center>
                         {errors.username && <span className={styles.errors}>Kindly enter a valid username</span> } <br/>
+                        </center>
                         <br></br>
 
                         <br></br>
@@ -96,17 +101,23 @@ export default function Login(){
                                     validate: (input) => isAlphanumeric (input)
                                 })}
                         />
+                        <center>
                         {errors.password && <span className={styles.errors}>Kindly enter a valid password</span> } <br/>
+                        </center>
                         <br></br>
-                        
-                        <button type="submit" value="submit" className={styles.button}>Login</button>
+
+                        <center>
+                            <button type="submit" value="submit" className={styles.loginbtn}>Login</button>
+                        </center>
 
                     </form>
 
                     <br></br>
-
-                    <Link href="signup"><button>Don't Have an Account? Sign Up Here</button></Link>
-                    <Link href="adminlogin"><button>Admin Login</button></Link>
+                    
+                    <a href="signup" className={styles.signuplnk}>Don't Have an Account? Sign Up Here</a>
+                    <br></br>
+                    <a href="adminlogin" className={styles.adminlnk}>Admin Login</a>
+                
                 </div>
             </main>
 
