@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // import Link from 'next/Link';
-import styles from '../../styles/admindashboard.module.css';
+import styles from '../../../styles/admindashboard.module.css';
 
 export default function Menumgmt() {
     return(
@@ -16,13 +16,13 @@ export default function Menumgmt() {
                     {/* <img src="/public/1.jpg" alt="logo"/> */}
                     <a href="#" className={styles.logo}/>
 
-                    <a href="../../../pages/admindashboard/users" className={styles.userlink} >
+                    <a href="/admindashboard/users" className={styles.userlink} >
                         Users
                     </a>
                     <a href="#meals" className={styles.menulink} >
                         Menu
                     </a>
-                    <a href="../../../pages/admindashboard/#orders" className={styles.orderlink} >
+                    <a href="/admindashboard/#orders" className={styles.orderlink} >
                         Orders
                     </a>
 
