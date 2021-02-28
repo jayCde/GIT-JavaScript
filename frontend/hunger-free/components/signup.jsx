@@ -75,11 +75,15 @@ export default function Signup(){
             </Head>
         
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Kindly enter your details to Signup.
-                </h1>
+            <img src="/Picture1.png" alt="logo" style={{position:"absolute", top:"5%", width:"50px", height:"50px"}}/>
+
 
                 <div className={styles.card}>
+
+                    <h2>
+                        Kindly enter your details below to Signup
+                    </h2>
+
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                         <input  type="text" 
@@ -141,14 +145,15 @@ export default function Signup(){
                         />
                         {errors.password && <span className={styles.errors}>Kindly enter a valid password</span> } <br/>
                         <br></br>
-                        
-                        <button type="submit" value="submit" className={styles.button}>Signup</button>
 
+                        <center>
+                            <button type="submit" value="submit" className={styles.signupbtn}>Signup</button>
+                        </center>
                     </form>
 
                     <br></br>
 
-                    <Link href="login"><button>Have an Account? Log In Here</button></Link>
+                    <a href="login" className={styles.loginlnk}>Have an Account? Log In Here</a>
                 </div>
             </main>
 
