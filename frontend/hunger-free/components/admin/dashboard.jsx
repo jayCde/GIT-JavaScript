@@ -11,10 +11,11 @@ export default function Admindashboard() {
             </Head>
 
             <main className={styles.main} id="main">
+                <img src="/Picture1.png" alt="logo" style={{width:"50px", height:"50px"}}/>
+
                 <div className={styles.referencelinks} id="reference links">
 
-                    {/* <img src="/public/1.jpg" alt="logo"/> */}
-                    <a href="#" className={styles.logo}/>
+                    {/* <a href="#" className={styles.logo}/> */}
 
                     <a href="#users" className={styles.userlink} >
                         Users
