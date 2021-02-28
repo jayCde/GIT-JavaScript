@@ -33,7 +33,7 @@ export default function Admindashboard() {
 
                 <div className={styles.title}>
                     <h3>
-                        Welcome to the admin dashboard, 
+                        Welcome to the admin dashboard
                     </h3>
                 </div>
 
@@ -41,12 +41,12 @@ export default function Admindashboard() {
 
                     <div className={styles.users} id="users">
                         Manage users here
-                        <Link href="admindashboard/users"><button> Manage users</button></Link>
+                        <Link href="admindashboard/users"><button className={styles.usersbtn}> Manage users</button></Link>
                     </div>
 
                     <div className={styles.meals} id="meals">
                         Manage meal menu                        
-                        <Link href="admindashboard/menu"><button>Manage menu</button></Link>
+                        <Link href="admindashboard/menu"><button className={styles.menubtn}>Manage menu</button></Link>
                     </div>
 
                     <div className={styles.orders} id="orders">
