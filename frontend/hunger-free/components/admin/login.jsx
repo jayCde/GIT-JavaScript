@@ -66,11 +66,13 @@ export default function Login(){
             </Head>
         
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Kindly enter your credentials to Login into the Admin dashboard.
-                </h1>
+            <img src="/Picture1.png" alt="logo" style={{position:"absolute", top:"5%", width:"50px", height:"50px"}}/>
+        
 
                 <div className={styles.card}>
+                    <h3>
+                        Enter administrator credentials below to login
+                    </h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                         <input  type="text" 
@@ -99,13 +101,15 @@ export default function Login(){
                         {errors.password && <span className={styles.errors}>Kindly enter a valid password</span> } <br/>
                         <br></br>
                         
-                        <button type="submit" value="submit" className={styles.button}>Login</button>
+                        <center>
+                            <button type="submit" value="submit" className={styles.loginbtn}>Login</button>
+                        </center>
 
                     </form>
 
                     <br></br>
 
-                    <Link href="/"><button>Home</button></Link>
+                    <a href="/" className={styles.homelnk}>Home</a>
                 </div>
             </main>
 
