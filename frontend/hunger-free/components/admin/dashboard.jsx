@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/Link';
+// import Link from 'next/Link';
 import styles from '../../styles/admindashboard.module.css';
 
 export default function Admindashboard() {
@@ -15,7 +15,7 @@ export default function Admindashboard() {
 
                     {/* <img src="/public/1.jpg" alt="logo"/> */}
                     <a href="#" className={styles.logo}/>
-                    
+
                     <a href="#users" className={styles.userlink} >
                         Users
                     </a>
