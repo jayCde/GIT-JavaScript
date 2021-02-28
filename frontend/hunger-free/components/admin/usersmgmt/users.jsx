@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // import Link from 'next/Link';
-import styles from '../../styles/admindashboard.module.css';
+import styles from '../../../styles/admindashboard.module.css';
 
 export default function Usermgmt() {
     return(
@@ -19,10 +19,10 @@ export default function Usermgmt() {
                     <a href="#users" className={styles.userlink} >
                         Users
                     </a>
-                    <a href="../../../pages/admindashboard/menu" className={styles.menulink} >
+                    <a href="/admindashboard/menu" className={styles.menulink} >
                         Menu
                     </a>
-                    <a href="../../../pages/admindashboard/#orders" className={styles.orderlink} >
+                    <a href="/admindashboard/#orders" className={styles.orderlink} >
                         Orders
                     </a>
 
