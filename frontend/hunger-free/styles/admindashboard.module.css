@@ -22,9 +22,12 @@
     align-items: center;
   }
 
+/*Navigation links*/
+
   .referencelinks{
     float: right;
     background-color: silver;
+    margin-top: 10px;
     padding: 25px 25px 10px 25px;
     height: 7vh;
     /* width:190vh; */
@@ -32,30 +35,11 @@
     align-content: center;
     align-items: center;
     border-radius: 10px;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-
-  }
-
-  .logo{
-    background-image: url(/1.jpg/);
-    padding: 20px 20px;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    display: inline;
-    border: 5px;
-  }
-
-  .logo:hover{
-    background-color: white;
-    border-radius: 40px;
-    transition-duration: 0.5s;
   }
 
   /* Users link */
 
   .userlink{
-    /* float: right; */
     color: black;
     padding: 14px 14px;
     text-align: center;
@@ -64,14 +48,12 @@
     display: inline;
     border: 5px;
   }
-
   .userlink:hover{
     background-color: crimson;
     border-radius: 10px;
     color: white;
     transition-duration: 0.5s;
   }
-
   .userlink:active{
     background-color: crimson;
     border-radius: 10px;
@@ -88,7 +70,6 @@
     text-decoration: none;
     display: inline;
   }
-
   .menulink:hover{
     background-color: chocolate;
     border-radius: 10px;
@@ -96,7 +77,6 @@
     transition-duration: 0.5s;
 
   }
-
   .menulink:active{
     background-color: chocolate;
     border-radius: 10px;
@@ -104,7 +84,6 @@
   }
 
   /* Order Link */
-
   .orderlink{
     color: black;
     padding: 14px 14px;
@@ -113,14 +92,12 @@
     text-decoration: none;
     display: inline;
   }
-
   .orderlink:hover{
     background-color: cornflowerblue;
     border-radius: 10px;
     color: white;
     transition-duration: 0.5s;
   }
-
   .orderlink:active{
     background-color: cornflowerblue;
     border-radius: 10px;
@@ -128,9 +105,7 @@
   }
 
     /* Logout Link */
-
     .logout{
-      /* height: 50vh; */
       color: black;
       padding: 14px 14px;
       text-align: center;
@@ -138,18 +113,27 @@
       text-decoration: none;
       display: inline;
     }
-  
     .logout:hover{
       background-color: rgb(195, 0, 0);
       border-radius: 10px;
       color: white;
       transition-duration: 0.5s;
     }
-  
     .logout:active{
       background-color: rgb(195, 0, 0);
       border-radius: 10px;
       color: white;
+    }
+
+    /*Styling for heading/title*/
+    .title{
+      margin-top: 10px;
+      padding: 5px 5px 5px 5px;
+      background-color: black;
+      border-radius: 10px;
+      opacity: .7;
+      color: white;
+      width: fit-content;
     }
 
   /*Styling for card*/
@@ -164,16 +148,7 @@
     align-items: center;
   }
 
-  /* .split{
-    height: 70%;
-    width: 35%;
-    position: fixed;
-    z-index: 1;
-    top: 10%;
-    overflow-x: hidden;
-    padding-top: 20px;
-  } */
-
+  /*Styling for user management section*/
   .users {
     height: fit-content;
     width: 100vh;
@@ -190,6 +165,26 @@
     border-radius: 10px;
   }
 
+  .usersbtn{
+    margin: 5px 2px 2px 2px;
+    width: 20vh;
+    height: 5vh;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-color: transparent;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .usersbtn:hover{
+    background-color: rgb(235, 135, 155);
+    transition-duration: 0.5s;
+    opacity: .8;
+    color: black;
+    font-weight: 600;
+  }
+
+/*Styling for meal/menu section*/
   .meals {    
     height: fit-content;
     width: 100vh;
@@ -206,6 +201,26 @@
     border-radius: 10px;
   }
 
+  .menubtn{
+    margin: 5px 2px 2px 2px;
+    width: 20vh;
+    height: 5vh;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-color: transparent;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .menubtn:hover{
+    background-color: rgb(231, 148, 88);
+    transition-duration: 0.5s;
+    opacity: .8;
+    color: black;
+    font-weight: 600;
+  }
+
+  /*Styling for orders section*/
   .orders {
     height: fit-content;
     width: 100vh;
@@ -222,6 +237,7 @@
     border-radius: 10px;
   }
 
+  /*Styling for footer*/
   .footer {
     width: 100%;
     height: 100px;
@@ -229,8 +245,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
   }
 
+  /*Responsive*/
   @media (max-width: 600px) {
     .grid {
       width: 100%;
