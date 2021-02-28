@@ -1,5 +1,5 @@
 import Head from 'next/head';
-// import Link from 'next/Link';
+import Link from 'next/Link';
 import styles from '../../styles/admindashboard.module.css';
 
 export default function Admindashboard() {
@@ -40,15 +40,15 @@ export default function Admindashboard() {
 
                     <div className={styles.users} id="users">
                         Manage users here
-                        <button> Manage users</button>
+                        <Link href="admindashboard/users"><button> Manage users</button></Link>
                     </div>
 
                     <div className={styles.meals} id="meals">
                         Manage meal menu                        
-                        <button>Manage menu</button>
+                        <Link href="admindashboard/menu"><button>Manage menu</button></Link>
                     </div>
 
-<                   div className={styles.orders} id="orders">
+                    <div className={styles.orders} id="orders">
                         Orders for the day
                         <hr style={{borderColor: "black", backgroundColor: "black",width: "70%", height: "2px"}}></hr>
                     </div>
