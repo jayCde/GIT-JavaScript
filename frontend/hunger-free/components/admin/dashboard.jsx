@@ -10,35 +10,51 @@ export default function Admindashboard() {
                 <link rel="icon" href="/favicon/"></link>
             </Head>
 
-            <main className={styles.main}>
+            <main className={styles.main} id="main">
+                <div className={styles.referencelinks} id="reference links">
+
+                    {/* <img src="/public/1.jpg" alt="logo"/> */}
+                    <a href="#" className={styles.logo}/>
+                    
+                    <a href="#users" className={styles.userlink} >
+                        Users
+                    </a>
+                    <a href="#meals" className={styles.menulink} >
+                        Menu
+                    </a>
+                    <a href="#orders" className={styles.orderlink} >
+                        Orders
+                    </a>
+
+                    <a href="/" className={styles.logout}>Logout</a>
+
+                </div>
+
                 <div className={styles.title}>
                     <h3>
                         Welcome to the admin dashboard, 
                     </h3>
                 </div>
 
-                <div className={styles.card}>
-                    <div className={styles.users}>
-                        Add, delete and update users here.
+                <div className={styles.card} id="card">
 
-                        <button> Add user</button>
+                    <div className={styles.users} id="users">
+                        Manage users here
+                        <button> Manage users</button>
                     </div>
 
-                    <div className={styles.orders}>
+                    <div className={styles.meals} id="meals">
+                        Manage meal menu                        
+                        <button>Manage menu</button>
+                    </div>
+
+<                   div className={styles.orders} id="orders">
                         Orders for the day
                         <hr style={{borderColor: "black", backgroundColor: "black",width: "70%", height: "2px"}}></hr>
-
                     </div>
 
+                </div>
 
-                    <div className={styles.meals}>
-                        Add, delete and update meals
-                        <button>Add meal</button>
-                    </div>
-                </div>
-                <div>
-                    <Link href="/"><button>Logout</button></Link>
-                </div>
             </main>
 
             <footer className={styles.footer}>
