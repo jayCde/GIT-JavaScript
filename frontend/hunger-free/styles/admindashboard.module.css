@@ -1,6 +1,6 @@
 .container {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
     background-position-x: 0;
     background-position-y: 0;
     background-image: url(/pexels-rachel-claire-4992585.jpg/);
