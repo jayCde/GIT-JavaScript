@@ -1,4 +1,9 @@
 .container {
+    background-size: contain;
+    background-repeat: repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-image: url(/pexels-amina-filkins-5561131.jpg/);
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;

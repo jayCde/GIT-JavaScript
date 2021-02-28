@@ -1,4 +1,9 @@
 .container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-image: url(/pexels-naomi-shi-1001914.jpg/);
     min-height: 100vh;
     padding: 0 0.5rem;
     display: flex;
