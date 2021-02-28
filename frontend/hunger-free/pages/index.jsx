@@ -12,17 +12,19 @@ export default function Home(){
             </Head>
         
             <main className={styles.main}>
+            <img src="/Picture1.png" alt="logo" style={{position:"absolute", top:"5%", width:"50px", height:"50px"}}/>
+
                 <h1 className={styles.title}>
-                    Welcome to The Healthy, Hunger-Free kids.
+                    Welcome to The Healthy, Hunger-Free kids
                 </h1>
 
                 <p className={styles.description}>
-                    Get started by Loging in or Signing up:
+                    Get started by Loging in or Signing up
                 </p>
 
-                <div className={styles.buttons}>
-                    <Link href="login"><button>Login</button></Link>
-                    <Link href="signup"><button>Sign Up</button></Link>
+                <div className={styles.buttonsgroup}>
+                    <Link href="login"><button className={styles.loginbtn}>Login</button></Link>
+                    <Link href="signup"><button className={styles.signupbtn}>Sign Up</button></Link>
                 </div>
             </main>
 
