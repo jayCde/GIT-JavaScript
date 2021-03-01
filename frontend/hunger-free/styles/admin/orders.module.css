@@ -1,0 +1,25 @@
+.Orders{
+    border-collapse: collapse;
+    border: 3px solid silver; 
+    width: 80%;
+    color: black;
+  }
+  
+  .orders td,
+  .orders th {
+    border: 1px solid silver;
+    padding: 12px;
+    color: black;
+  }
+  
+  .orders tr:hover {
+    background-color: darkolivegreen;
+    color: black;
+  }
+  
+  .orders th {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
