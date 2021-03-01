@@ -1,0 +1,185 @@
+.container {
+    background-size: contain;
+    background-repeat: repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-image: url(/pexels-laker-6157056.jpg/);
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    width: 100vh;
+    padding: 1.5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*Navigation links*/
+
+  .referencelinks{
+    float: right;
+    background-color: silver;
+    margin-top: 10px;
+    padding: 25px 25px 10px 25px;
+    height: 7vh;
+    /* width:190vh; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  /* Users link */
+
+  .userlink{
+    color: black;
+    padding: 14px 14px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline;
+    border: 5px;
+  }
+  .userlink:hover{
+    background-color: crimson;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+  }
+  .userlink:active{
+    background-color: crimson;
+    border-radius: 10px;
+    color: white;
+  }
+
+  /* Menu link */
+
+  .menulink{
+    color: black;
+    padding: 14px 14px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline;
+  }
+  .menulink:hover{
+    background-color: chocolate;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+
+  }
+  .menulink:active{
+    background-color: chocolate;
+    border-radius: 10px;
+    color: white;
+  }
+
+  /* Order Link */
+  .orderlink{
+    color: black;
+    padding: 14px 14px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline;
+  }
+  .orderlink:hover{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.5s;
+  }
+  .orderlink:active{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: white;
+  }
+
+    /* Logout Link */
+    .logout{
+      color: black;
+      padding: 14px 14px;
+      text-align: center;
+      justify-content: center;
+      text-decoration: none;
+      display: inline;
+    }
+    .logout:hover{
+      background-color: rgb(195, 0, 0);
+      border-radius: 10px;
+      color: white;
+      transition-duration: 0.5s;
+    }
+    .logout:active{
+      background-color: rgb(195, 0, 0);
+      border-radius: 10px;
+      color: white;
+    }
+
+    /*Styling for heading/title*/
+    .title{
+      margin-top: 10px;
+      padding: 5px 5px 5px 5px;
+      background-color: black;
+      border-radius: 10px;
+      opacity: .7;
+      color: white;
+      width: fit-content;
+    }
+
+  /*Styling for card*/
+  .card {   
+    padding: 1rem 0;
+    height: fit-content;
+    width: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Styling for user management section*/
+  .users {
+    height: fit-content;
+    width: 100vh;
+    padding: 2rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-color: crimson;
+    border-color: crimson;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  /*Styling for footer*/
+  .footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  /*Responsive*/
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
