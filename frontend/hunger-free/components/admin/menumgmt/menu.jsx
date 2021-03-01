@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // import Link from 'next/Link';
-import styles from '../../../styles/admindashboard.module.css';
+import styles from '../../../styles/admin/admindashboard.module.css';
 
 export default function Menumgmt() {
     return(
