@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/Link';
 import Orders from '../../components/admin/orders/orders'
-import styles from '../../styles/admindashboard.module.css';
+import styles from '../../styles/admin/admindashboard.module.css';
 
 export default function Admindashboard() {
     return(
@@ -53,7 +53,7 @@ export default function Admindashboard() {
                     <div className={styles.orders} id="orders">
                         Orders for the day
                         <hr style={{borderColor: "black", backgroundColor: "black",width: "70%", height: "2px"}}></hr>
-                        
+
                         <Orders></Orders>
                     </div>
 
