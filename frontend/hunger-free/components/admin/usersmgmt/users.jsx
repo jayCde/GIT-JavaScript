@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // import Link from 'next/Link';
-import styles from '../../../styles/admin/admindashboard.module.css';
+import styles from '../../../styles/admin/users.module.css';
 
 export default function Usermgmt() {
     return(
@@ -42,7 +42,7 @@ export default function Usermgmt() {
 
                     <div className={styles.users} id="users">
                         Manage users here
-                        <button> Manage users</button>
+                        <hr style={{borderColor: "black", backgroundColor: "black",width: "70%", height: "2px"}}></hr>
                     </div>
 
                 </div>
