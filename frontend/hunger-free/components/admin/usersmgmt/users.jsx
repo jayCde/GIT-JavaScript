@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // import Link from 'next/Link';
-import styles from '../../../styles/admindashboard.module.css';
+import styles from '../../../styles/admin/admindashboard.module.css';
 
 export default function Usermgmt() {
     return(
@@ -11,6 +11,8 @@ export default function Usermgmt() {
             </Head>
 
             <main className={styles.main} id="main">
+                <img src="/Picture1.png" alt="logo" style={{width:"50px", height:"50px"}}/>
+
                 <div className={styles.referencelinks} id="reference links">
 
                     {/* <img src="/public/1.jpg" alt="logo"/> */}
@@ -32,7 +34,7 @@ export default function Usermgmt() {
 
                 <div className={styles.title}>
                     <h3>
-                        Welcome to the admin dashboard, 
+                        User Management 
                     </h3>
                 </div>
 
