@@ -1,4 +1,6 @@
 {
+
+
   "admin": [
     {
       "id": "101",
@@ -9,6 +11,8 @@
       "age": "101"
     }
   ],
+
+
   "students": [
     {
       "id": "1",
@@ -52,23 +56,73 @@
     }
   ],
 
-  "food": [
+
+  "menu": [
     {
-      "meal": [
-        "Banku with Shito and Tilapia",
-        "Rice with Kontomire Stew and Fish",
-        "French fries with Shito and Chicken",
-        "Rice with Stew and Fried Egg",
-        "Noodles with Sausages, eggs and chicken slices"
-      ]
+        "id": "1",
+        "food": "Banku with Shito and Tilapia"
+    },
+
+    {
+      "id": "2",
+      "food": "Rice with Kontomire Stew and Fish"
+    },
+
+    {
+      "id": "3",
+      "food": "French fries with Shito and Chicken"
+    },
+
+    {
+      "id": "4",
+      "food": "Rice with Stew and Fried Egg"
+    },
+
+    {
+      "id": "5",
+      "food": "Noodles with Sausages, eggs and chicken slices"
     }
+  ],
+
+  "days":[
+      {
+        "id": "1",
+        "day": "Monday"
+      },
+      {
+        "id": "2",
+        "day": "Tuesday"
+      },
+      {
+        "id": "3",
+        "day": "Wednesday"
+      },
+      {
+        "id": "4",
+        "day": "Thursday"
+      },
+      {
+        "id": "5",
+        "day": "Friday"
+      }
   ],
 
   "orders": [
     {
-      "username": "",
-      "meal": "",
-      "day": ""
-    }
+        "id": "1",
+        "day": "Monday",
+        "username": "janedoe9743",
+        "food": "Noodles with Sausages, eggs and chicken slices"
+      
+    },
+    {
+      "id": "2",
+      "day": "Monday",
+      "username": "Tuesday",
+      "food": "Rice with Stew and Fried Egg"
+    
+  }
   ]
+
+
 }
