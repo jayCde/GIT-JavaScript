@@ -43,20 +43,20 @@ export default function Signup(){
             password: data.password
         }).then (resp =>{
 
-            //If user credentials are correct and login successful
+            //If user credentials are correct and signup successful
             if (resp.status == 201){
                 window.location="login";
                 alert("Signup Successful")
                 console.log(resp.data)
                 localStorage.setItem('student', JSON.stringify(resp.data))
             }else{
-                //if user credentials are inccorect and login unsuccessful
+                //if user credentials are inccorect and signup unsuccessful
                 window.location.href="signup";
                 console.log(resp.data);
             }
         }).catch(err =>{
-            console.log("An error occurred while logging in", err)
-            alert("Kindly enter valid credentials")
+            console.log("An error occurred while signing up. Please try again later", err)
+            alert("Kindly enter valid credentials to signup")
         })
         console.log(data)
     }
