@@ -164,7 +164,30 @@
     margin-bottom: 10px;
     border-radius: 10px;
   }
-  
+
+  .addusers{  
+    background-color: darkslategray;
+    float:left;
+    left: 0;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    /* justify-self: center; */
+  }
+
+  .updateusers{
+    background-color: darkslategray;
+    float: right;
+    float:left;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
+  }
+
   /*Styling for footer*/
   .footer {
     width: 100%;
