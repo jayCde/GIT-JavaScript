@@ -1,6 +1,4 @@
 {
-
-
   "admin": [
     {
       "id": "101",
@@ -11,8 +9,6 @@
       "age": "101"
     }
   ],
-
-
   "students": [
     {
       "id": "1",
@@ -53,76 +49,80 @@
       "age": "12",
       "password": "harlquinn1256",
       "id": "tUtSGY7"
+    },
+    {
+      "firstname": "thistestfname",
+      "lastname": "thistestlname",
+      "username": "thistestusern",
+      "age": "12",
+      "password": "thistesetuser1",
+      "id": "0Ggk7w5"
+    },
+    {
+      "firstname": "secontestfname",
+      "lastname": "secondtestlname",
+      "username": "secondtestuname",
+      "age": "10",
+      "password": "thissecondtestuname",
+      "id": "GHApZHX"
     }
   ],
-
-
   "menu": [
     {
-        "id": "1",
-        "food": "Banku with Shito and Tilapia"
+      "id": "1",
+      "food": "Banku with Shito and Tilapia"
     },
-
     {
       "id": "2",
       "food": "Rice with Kontomire Stew and Fish"
     },
-
     {
       "id": "3",
       "food": "French fries with Shito and Chicken"
     },
-
     {
       "id": "4",
       "food": "Rice with Stew and Fried Egg"
     },
-
     {
       "id": "5",
       "food": "Noodles with Sausages, eggs and chicken slices"
     }
   ],
-
-  "days":[
-      {
-        "id": "1",
-        "day": "Monday"
-      },
-      {
-        "id": "2",
-        "day": "Tuesday"
-      },
-      {
-        "id": "3",
-        "day": "Wednesday"
-      },
-      {
-        "id": "4",
-        "day": "Thursday"
-      },
-      {
-        "id": "5",
-        "day": "Friday"
-      }
+  "days": [
+    {
+      "id": "1",
+      "day": "Monday"
+    },
+    {
+      "id": "2",
+      "day": "Tuesday"
+    },
+    {
+      "id": "3",
+      "day": "Wednesday"
+    },
+    {
+      "id": "4",
+      "day": "Thursday"
+    },
+    {
+      "id": "5",
+      "day": "Friday"
+    }
   ],
-
   "orders": [
     {
-        "id": "1",
-        "day": "Monday",
-        "username": "janedoe9743",
-        "food": "Noodles with Sausages, eggs and chicken slices"
-      
+      "id": "1",
+      "day": "Monday",
+      "username": "janedoe9743",
+      "food": "Noodles with Sausages, eggs and chicken slices"
     },
     {
       "id": "2",
       "day": "Monday",
       "username": "Tuesday",
       "food": "Rice with Stew and Fried Egg"
-    
-  }
+    }
   ]
-
-
 }
