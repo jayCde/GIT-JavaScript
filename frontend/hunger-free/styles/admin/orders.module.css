@@ -23,3 +23,32 @@
     background-color: black;
     color: white;
   }
+
+  .Table {
+    border-collapse: collapse;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  
+  }
+  
+  .Table td,
+  .Table th {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    padding-right: 50px;
+  
+  }
+  
+  .Table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .Table th {
+    text-align: left;
+    /* background: #0a5eb1b7; */
+    background: #fff;
+  
+  }
