@@ -39,7 +39,7 @@ export default function Login(){
                 window.location="admindashboard";
                 alert("Login Successful")
                 console.log(resp.data)
-                localStorage.setItem('student', JSON.stringify(resp.data))
+                localStorage.setItem('admin', JSON.stringify(resp.data))
             }else{
                 //if user credentials are inccorect and login unsuccessful
                 window.location.href="login";
