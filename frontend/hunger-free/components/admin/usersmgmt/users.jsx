@@ -1,5 +1,6 @@
 import Head from 'next/head';
 // import Link from 'next/Link';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import { useForm } from "react-hook-form";
 import isInt from 'validator/lib/isInt';
@@ -10,18 +11,19 @@ import styles from '../../../styles/admin/users.module.css';
 
 export default function Usermgmt() {
 
-    //react hooks
-    const { 
+    //Endpoint(s) and url(s)
+
+    const endpoint = 'students';
+    const studentuserurl = `${API_BASE_URL}:${API_PORT}/${endpoint}`;
+
+        // ------------------------------------user addition ---------------------------------------------
+        // ------------------------------------------------------------------------------------------------    
+        const { 
         register, errors, watch,
             handleSubmit = async (e) => {
             {e.preventDefault}
             }  
         } = useForm ();
-
-        //Endpoint(s) and url(s)
-
-        const endpoint = 'students';
-        const studentuserurl = `${API_BASE_URL}:${API_PORT}/${endpoint}`;
     
         //Handle form data for login
         const onSubmit = ( data = {firstname, lastname, 
@@ -39,7 +41,7 @@ export default function Usermgmt() {
     
                 //If credentials entered for user addition are correct and addition successful
                 if (resp.status == 201){
-                    window.location="/users";
+                    window.location="/admindashboard/users";
                     alert("User added successfully")
                     console.log(resp.data)
                 }else{
@@ -49,7 +51,7 @@ export default function Usermgmt() {
                 }
             }).catch(err =>{
                 console.log("An error occurred while adding the user", err)
-                alert("Sorry an error occurred while adding the user. Kindly enter valid credentials. Or, you can try again later.")
+                alert("Sorry an error occurred while adding the user. Please try again later.")
             })
             console.log(data)
         }
@@ -57,6 +59,51 @@ export default function Usermgmt() {
         //watch errors in form fields
         console.log(watch('firstname', 'lastname', 'age', 'username', 'password'));
         console.log(errors.firstname, errors.lastname, errors.age, errors.username, errors.password)
+
+        // ------------------------------------table functionality-----------------------------------------
+        // ------------------------------------------------------------------------------------------------
+    
+        //State objects
+    const [users, setUsers] = useState([]);
+
+            //function to fetch users
+    const fetchUsers = ( data = {users, setUsers}) =>{
+        axios.get(studentuserurl, {headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+        }).then(response => {
+            if (response.status==200){
+                console.log("Data was fetched successfully", response.data)
+                window.alert("Users fetched successfully")
+                localStorage.setItem('User list', response.data)
+                setUsers(response.data)
+            }
+            else{
+                console.log(response.data)
+            }
+        }).catch(err=>{
+            console.log("There seems to be an issue fetching data")
+            window.alert("Could not load the user list. Please try again later")
+        })
+    }
+
+    //callback function to fetch orders
+    useEffect(() => {
+        fetchUsers()
+    }, [])
+
+
+    //function to render table header/heading
+    const renderTableHeading = () => {
+        var headingElement =['id', "Firstname", "Lastname", "Username", "Password", "Age"]
+
+        return headingElement.map((key, index) =>{
+            return <th key={index}>{key.toUpperCase()}</th>
+        });
+    }
+
+
 
     return(
         <div className={styles.container}>
@@ -173,6 +220,31 @@ export default function Usermgmt() {
                             </form>
                         </div>
 
+                        
+                    </div>
+
+                        <hr style={{borderColor: "black", backgroundColor: "black",width: "100%", height: "2px"}}></hr>
+
+                    <div>
+                    <table className={styles.Table}>
+                        <thead>
+                            <tr>{renderTableHeading()}</tr>
+                        </thead>
+                        <tbody>
+                        {users.map((users, index) => {
+                            return (
+                            <tr key={index}>
+                                <td>{users.id}</td>
+                                <td>{users.firstname} </td>
+                                <td>{users.lastname}</td>
+                                <td>{users.username}</td>
+                                <td>{users.password}</td>
+                                <td>{users.age}</td>
+                            </tr>
+                            );
+                        })}
+                        </tbody>
+                    </table>
                         
                     </div>
 
