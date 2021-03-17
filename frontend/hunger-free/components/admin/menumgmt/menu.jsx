@@ -18,7 +18,7 @@ export default function Menumgmt() {
 
         //Endpoint(s) and url(s)
 
-        const endpoint = 'meal';
+        const endpoint = 'menu';
         const menuurl = `${API_BASE_URL}:${API_PORT}/${endpoint}`;
     
         //Handle form data for meal addition
@@ -26,23 +26,22 @@ export default function Menumgmt() {
 
             console.log('data is', data)
             axios.post(menuurl, {
-                id: data.id,
                 food: data.food,
             }).then (resp =>{
     
                 //If new meal addition is successful
                 if (resp.status == 201){
-                    window.location="/menu";
+                    window.location.reloasd;
                     alert("The meal has been added to menu successfully")
                     console.log(resp.data)
                 }else{
                     //if credentials entered for user addition are incorrect and addition unsuccessful
-                    window.location.href="/users";
+                    window.location.href="/admindashboard/users";
                     console.log(resp.data);
                 }
             }).catch(err =>{
                 console.log("An error occurred while adding meal to menu", err)
-                alert("Sorry an error occurred while adding a meal to the menu.Kindly try again later.")
+                alert("Sorry an error occurred while adding a meal to the menu. Kindly try again later.")
             })
             console.log(data)
         }
