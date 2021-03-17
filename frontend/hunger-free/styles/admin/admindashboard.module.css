@@ -248,6 +248,21 @@
     font-weight: 600;
   }
 
+  .InputField{
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+    width: 60vh;
+    height: 5vh;
+    background-color: White;
+    color: black;
+    border-color: transparent;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+
   /*Responsive*/
   @media (max-width: 600px) {
     .grid {
@@ -255,3 +270,4 @@
       flex-direction: column;
     }
   }
+

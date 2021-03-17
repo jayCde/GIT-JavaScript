@@ -1,0 +1,14 @@
+.InputField{
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+    width: 60vh;
+    height: 5vh;
+    background-color: rgb(122, 115, 115);
+    color: Black;
+    border-color: transparent;
+    border-radius: 10px;
+    font-weight: 400;
+  }
