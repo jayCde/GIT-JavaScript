@@ -163,20 +163,12 @@
     border-color: crimson;
     margin-bottom: 10px;
     border-radius: 10px;
+    opacity: 0.8;
   }
 
-  .addusers{  
-    background-color: darkslategray;
-    float:left;
-    left: 0;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    /* justify-self: center; */
-  }
+ 
 
-  .updateusers{
+  /* .updateusers{
     background-color: darkslategray;
     float: right;
     float:left;
@@ -186,6 +178,75 @@
     justify-items: center;
     justify-self: center;
 
+  } */
+
+  
+  .addusers{
+    background-color: white;
+    margin-top: 30px; 
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    float:left;
+    left: 0;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+    height:70vh;
+    background-color: white;
+    border-radius: 10px;
+    /* opacity: .8; */
+  }
+
+  .InputField{
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+    width: 60vh;
+    height: 5vh;
+    background-color: rgb(122, 115, 115);
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+
+  .errors{
+    color: darkred;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+  }
+
+  .userbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 10px;
+    width: 60%;
+    height: fit-content;
+    background-color: silver;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .userbtn:hover{
+    background-color: white;
+    transition-duration: 0.5s;
+    opacity: 1;
+    color: black;
+  
   }
 
   /*Styling for footer*/
@@ -197,6 +258,35 @@
     justify-content: center;
     align-items: center;
     font-weight: 600;
+  }
+
+  .Table {
+    border-collapse: collapse;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+  
+  }
+  
+  .Table td,
+  .Table th {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    padding-right: 50px;
+  
+  }
+  
+  .Table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .Table th {
+    text-align: left;
+    /* background: #0a5eb1b7; */
+    background: #fff;
+  
   }
 
   /*Responsive*/
