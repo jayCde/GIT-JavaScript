@@ -107,7 +107,20 @@ export default function Menumgmt() {
                                 <br></br>
 
                                 <center>
-                                    <button type="submit" value="submit" className={styles.userbtn}>Add Meal</button>
+                                    <button type="submit" value="submit" 
+                                    style={{
+                                        margin: "5px 2px 2px 2px",
+                                        width: "20vh",
+                                        height: "5vh",
+                                        cursor: "pointer",
+                                        backgroundColor: "white",
+                                        color: "black",
+                                        borderColor: "transparent",
+                                        borderRadius: "20px",
+                                        fontWeight: "500",
+                                        transition: "0.3",
+                                    }}
+                                    >Add Meal</button>
                                 </center>
 
                             </form>
