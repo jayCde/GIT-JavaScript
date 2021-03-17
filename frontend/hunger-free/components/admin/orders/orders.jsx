@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react';
+// import Link from 'next/link';
 import axios from 'axios';
 import {API_BASE_URL, API_PORT} from '../../../../config';
 import styles from '../../../styles/admin/orders.module.css'
 export default function Orders(){
+
+    // Define styles
+    const {Table}= styles;
 
     // Endpoint(s) and url(s)
 
@@ -14,22 +18,25 @@ export default function Orders(){
     const [orders, setOrders] = useState([]);
 
     //function to fetch orders
-    const fetchOrders = async (data = {orders, setOrders}) =>{
-        const resp = await axios.get(url, {
-        }).then(resp => {
-            if (resp.status==200){
-                console.log("Data was fetched successfully")
+    const fetchOrders = ( data = {orders, setOrders}) =>{
+        axios.get(url, {headers:{
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+        }).then(response => {
+            if (response.status==200){
+                console.log("Data was fetched successfully", response.data)
                 window.alert("Orders fetched successfully")
-                localStorage.setItem('Order list', resp.data)
+                localStorage.setItem('Order list', response.data)
+                setOrders(response.data)
             }
             else{
-                console.log(resp)
+                console.log(response.data)
             }
-        }).catch(error=>{
+        }).catch(err=>{
             console.log("There seems to be an issue fetching data")
             window.alert("Could not load the order list. Please try again later")
         })
-        setOrders(resp)
     }
 
     //callback function to fetch orders
@@ -45,35 +52,30 @@ export default function Orders(){
 
         return headingElement.map((key, index) =>{
             return <th key={index}>{key.toUpperCase()}</th>
-        })
+        });
     }
 
     //function to render table body
-    const renderTableBody = () =>{
-    return orders && orders.map(({id, day, username, food}) => {
-        return (
-            <tr key ={id}>
-                <td>{id}</td>
-                <td>{day}</td>
-                <td>{username}</td>
-                <td>{food}</td>
-            </tr>
-        )
-    })
-}
-
-    return(
+    return (
         <div>
-            <table className={styles.orders}>
-                <thead>
-                    <tr>{renderTableHeading()}</tr>
-                </thead>
-
-                <tbody>
-                    {renderTableBody()}
-
-                </tbody>
-            </table>
+          <table className={Table}>
+            <thead>
+              <tr>{renderTableHeading()}</tr>
+            </thead>
+            <tbody>
+              {orders.map((orders, index) => {
+                return (
+                  <tr key={index}>
+                    <td>{orders.id}</td>
+                    <td>{orders.day} </td>
+                    <td>{orders.username}</td>
+                    <td>{orders.food}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
-    );
-}
+      );
+
+   }
