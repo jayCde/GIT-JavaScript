@@ -60,6 +60,21 @@ export default function Usermgmt() {
         console.log(watch('firstname', 'lastname', 'age', 'username', 'password'));
         console.log(errors.firstname, errors.lastname, errors.age, errors.username, errors.password)
 
+
+        //Delete user functionality
+        const removeUser = id => {
+            axios
+            .delete(studentuserurl, {
+                headers: {
+                "Content-Type": "application/json"
+                }
+            })
+            .then(res => {
+                const del = users.filter(users => id !== users.id);
+                setUsers(del);
+            });
+        };
+
         // ------------------------------------table functionality-----------------------------------------
         // ------------------------------------------------------------------------------------------------
     

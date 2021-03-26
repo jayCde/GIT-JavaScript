@@ -11,7 +11,7 @@
   ],
   "students": [
     {
-      "id": "1",
+      "id": "OehlQ6s",
       "firstname": "test",
       "lastname": "user",
       "username": "thisusertest1",
@@ -65,6 +65,22 @@
       "age": "10",
       "password": "thissecondtestuname",
       "id": "GHApZHX"
+    },
+    {
+      "firstname": "adminadded",
+      "lastname": "ADMINad",
+      "username": "adminsadkskk434",
+      "age": "12",
+      "password": "thiswasaddedd1234",
+      "id": "sCOfaiP"
+    },
+    {
+      "firstname": "hithis",
+      "lastname": "hishihis",
+      "username": "jisiisisj",
+      "age": "11",
+      "password": "mkdjkjdkSSKKKik4",
+      "id": "pN0Bsau"
     }
   ],
   "menu": [
@@ -87,6 +103,14 @@
     {
       "id": "5",
       "food": "Noodles with Sausages, eggs and chicken slices"
+    },
+    {
+      "food": "Banku",
+      "id": "ee6YzGh"
+    },
+    {
+      "food": "Shito",
+      "id": "tC-fNql"
     }
   ],
   "days": [
@@ -121,7 +145,7 @@
     {
       "id": "2",
       "day": "Monday",
-      "username": "Tuesday",
+      "username": "mikey1234",
       "food": "Rice with Stew and Fried Egg"
     }
   ]
