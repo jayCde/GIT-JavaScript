@@ -26,7 +26,7 @@ Testing and Quality Assurance for the frontend application is achieved using jes
 
 # Starting the frontend application
 
-First, install all package dependencies by running:
+First, install all package dependencies by running from the root folder:
 ```bash
 npm install
 # or
