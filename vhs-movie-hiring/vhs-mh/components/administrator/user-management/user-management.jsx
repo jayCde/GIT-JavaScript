@@ -7,6 +7,7 @@ import isInt from 'validator/lib/isInt';
 import isAlpha from 'validator/lib/isAlpha';
 import isAlphanumeric from 'validator/lib/isAlphanumeric';
 import isDate from 'validator/lib/isDate';
+import EditUser from './edituser';
 
 
 import {API_BASE_URL, API_PORT} from '../../../configuration-files/config.js';
@@ -17,7 +18,7 @@ export default function UserManagement() {
     //Endpoint(s) and url(s)
 
     const endpoint = 'user';
-    const studentuserurl = `${API_BASE_URL}:${API_PORT}/${endpoint}`;
+    const url = `${API_BASE_URL}:${API_PORT}/${endpoint}`;
 
         // ------------------------------------user addition ---------------------------------------------
         // ------------------------------------------------------------------------------------------------    
@@ -28,7 +29,7 @@ export default function UserManagement() {
             }  
         } = useForm ();
     
-        //Handle form data for login
+        //Handle form data for user addition
         const onSubmit = ( data = {firstname, lastname, 
                                     username, age, password
                         }) =>{
@@ -69,18 +70,15 @@ export default function UserManagement() {
 
         const removeUser = id => {
             axios
-            .delete(studentuserurl, {
-                headers: {
-                "Content-Type": "application/json"
-                }
-            })
-            .then(res => {
+            .delete(url, {headers: {
+                "Content-Type": "application/json"}
+            }).then(res => {
                 const del = users.filter(users => id !== users.id);
                 setUsers(del);
             });
         };
 
-        // ------------------------------------Make endpoint calls  for user list--------------------
+        // ------------------------------------Make endpoint calls  for user list-----------------
         // ---------------------------------------------------------------------------------------
     
         //State objects
@@ -88,7 +86,7 @@ export default function UserManagement() {
 
             //function to fetch users
     const fetchUsers = ( data = {users, setUsers}) =>{
-        axios.get(studentuserurl, {headers:{
+        axios.get(url, {headers:{
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         }
@@ -127,7 +125,7 @@ export default function UserManagement() {
     // -----------------------------------------------------------------------------------
 
     const renderTableHeading = () => {
-        var headingElement =['id', "Firstname", "Lastname", "Username", "Password", "D_O_B"]
+        var headingElement =['id', "Firstname", "Lastname", "Username", "Password", "D_O_B", "Actions"]
 
         return headingElement.map((key, index) =>{
             return <th key={index}>{key.toUpperCase()}</th>
@@ -157,7 +155,11 @@ export default function UserManagement() {
                     <h1>Welcome to the user management pane, </h1>
                     <p>Manage all user related activities here.</p>
                     <p>Calendar: {date} Time: {time}</p>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                    <button className={styles.adduserBtn}
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#edit-user"
+                    > Edit user</button>
                 </div>
             </div>
             <hr style={{backgroundColor: "white", borderColor: "5px white"}}></hr>
@@ -241,6 +243,9 @@ export default function UserManagement() {
                                     </form>
                                 </div>
                             </div>
+                            <div>
+                                <EditUser/>
+                            </div>
 
                                 
                             </div>
@@ -260,6 +265,10 @@ export default function UserManagement() {
                                         <td>{users.username}</td>
                                         <td>{users.password}</td>
                                         <td>{users.D_O_B}</td>
+                                        <td>
+                                            <button>&#9997;</button>
+                                            <button onClick={removeUser}>&#10060;</button>
+                                        </td>
                                     </tr>
                                     );
                                 })}
