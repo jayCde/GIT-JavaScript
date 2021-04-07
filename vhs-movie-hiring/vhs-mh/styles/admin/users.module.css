@@ -90,7 +90,7 @@
     justify-items: center;
     justify-content: center;
     align-items: center;
-    width: 60vh;
+    width: 55vh;
     height:55vh;
     background-color: white;
     border-radius: 10px;
@@ -103,7 +103,7 @@
     justify-content: center;
     align-items: center;
     padding: 2px 2px 2px 2px;
-    width: 50vh;
+    width: 45vh;
     height: 5vh;
     background-color: rgb(122, 115, 115);
     color: white;
@@ -149,8 +149,9 @@
   .Table {
     margin-top: -20%;
     border-collapse: collapse;
-    width: 100%;
+    width: 110%;
     cursor: pointer;
+    font-size: 10px;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -161,7 +162,7 @@
   .Table td,
   .Table th {
     border-bottom: 1px solid #ddd;
-    padding: 12px;
+    padding: 10px;
     padding-right: 50px;
     font-size: 14px;
   
