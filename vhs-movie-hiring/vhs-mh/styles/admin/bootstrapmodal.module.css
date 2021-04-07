@@ -1,0 +1,85 @@
+.modalbox {
+  background: #ffffff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  width: 666px;
+  height: 757px;
+}
+
+.header {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 18px;
+  color: #000000;
+}
+
+.label {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+.input {
+  background: #eff0f7;
+  border: 1px solid #eff0f7;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  width: 552px;
+  height: 64px;
+}
+
+.textArea {
+  background: #eff0f7;
+  border: 1px solid #eff0f7;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  width: 552px;
+  height: 300px;
+}
+
+
+.cancel {
+  background: #a0a3bd;
+  border-radius: 50%;
+}
+
+.btnex {
+  background: #df265e;
+  border-radius: 16px;
+  width: 552px;
+  height: 51px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background: #df265e;
+    border-radius: 16px;
+    width: 179px;
+    height: 51px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.btn2 {
+    background: #df265e;
+    border-radius: 16px;
+    width: 179px;
+    height: 51px;
+    border: none;
+    outline: none;
+    margin-right: 55px;
+    margin-top: 25px;
+  }
